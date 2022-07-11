@@ -40,7 +40,7 @@ class PostsDAO:
         posts = self._load_posts()
         for post in posts:
             if post.pk == pk:
-                return posts
+                return post
 
     def search_in_content(self, substring):
         """Ищет посты где в контенте встречается substring """
